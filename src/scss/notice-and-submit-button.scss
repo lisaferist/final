@@ -1,0 +1,32 @@
+.notice {
+  color: $grey;
+  line-height: 114%;
+
+  .notice__link {
+    color: $pink;
+  }
+}
+
+.submit-button {
+  width: 130px;
+  height: 32px;
+  padding-left: 10px;
+  padding-right: 20px;
+
+  font-size: 12px;
+  font-weight: 700;
+  font-family: TTLakes-Medium, 'sans-serif';
+  color: $white;
+
+  border: none;
+  border-radius: 16px;
+  background: $pink url("../img/icons/goside.svg") no-repeat 95% 50%;
+
+  transition-duration: 300ms;
+  transition-property: opacity, transform;
+}
+
+.submit-button:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}

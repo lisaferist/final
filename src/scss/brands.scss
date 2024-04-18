@@ -1,0 +1,135 @@
+.brands {
+  margin: 0 0 20px 0;
+  padding: 0;
+  overflow: hidden;
+
+  .brands-container {
+    height: 125px;
+    margin: 0;
+    padding-top: 15px;
+    position: relative;
+
+    .swiper-shadow {
+      height: 120px;
+    }
+
+    .brand-list {
+      height: 125px;
+      margin: 0;
+      padding-left: 15px;
+
+      .swiper-slide {
+        width: 240px;
+      }
+
+      .brand-list__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 72px;
+        padding: 0 15px;
+
+        border: 1px solid $border-grey;
+        border-radius: 5px;
+        background-color: $white;
+      }
+    }
+  }
+
+  .brands__more-button {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .brands {
+    margin-bottom: 30px;
+
+    .brands-container {
+      padding: 0;
+      height: 190px;
+
+      .brand-list {
+        height: 190px;
+        overflow: hidden;
+        padding-top: 10px;
+        padding-left: 20px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+
+        .swiper-slide {
+          width: 29.9%;
+          max-width: 240px;
+          min-width: 224px;
+
+          margin-right: 25px;
+          margin-top: 15px;
+          height: 72px;
+
+          flex-shrink: 0;
+        }
+
+        .brand-list__item {
+          margin: 0;
+          width: 100%;
+          min-width: 220px;
+          max-width: 240px;
+        }
+      }
+
+      .swiper-pagination {
+        display: none;
+      }
+    }
+
+    .brands__more-button {
+      margin-top: 15px;
+      margin-left: 25px;
+      display: block;
+    }
+  }
+}
+
+
+@media (min-width: 1120px) {
+  .brands {
+    margin-bottom: 50px;
+
+    .brands-container {
+      .brand-list {
+        padding-left: 30px;
+
+        .swiper-slide {
+          width: 22%;
+          margin-right: 30px;
+        }
+      }
+    }
+
+    .brands__more-button {
+      margin-top: 15px;
+      margin-left: 35px;
+    }
+  }
+}
+
+.brands {
+  .brands-container--opened  {
+    height: max-content;
+    .brand-list--opened {
+      height: max-content;
+    }
+  }
+}
+@media (min-width: 1366px) {
+  .brands {
+    margin-left: 320px;
+  }
+}

@@ -1,0 +1,34 @@
+$white: #FFFFFF;
+$light-aqua: #D0FFF5;
+$aqua: #00FFC4;
+$light-grey: #F8F8F8;
+$grey: #7E7E82;
+$bullet-grey: #B5B6BC;
+$border-grey: #EAEAEA;
+$purple: #454F7E;
+$pink: #FF3E79;
+$no-color: rgba(0, 0, 0, 0);
+
+html {
+  box-sizing: border-box !important;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit !important;
+}
+
+body {
+  font-family: "TTLakes-Regular", sans-serif;
+  background-color: $light-grey;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+@media (min-width: 2500px) {
+  body {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
